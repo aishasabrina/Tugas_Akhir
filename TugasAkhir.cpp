@@ -46,9 +46,9 @@ main()
 }
 
 void daftar(){
+	ulang:
 	bool ada=false;
 	
-	ulang:
 	system("cls");
 	cout<<"Pendaftaran Rekening"<<endl;
 	cout<<"Masukkan Nomor Rekening   : "; cin>>rek[nas];
@@ -65,8 +65,6 @@ void daftar(){
 		if(ada){
 			cout<<"Nomor Rekening tersebut telah terdaftar, coba lagi."<<endl;
 			system("pause");
-			nasabah+=nas;
-			nas++;
 			goto ulang;
 		}else{
 			cout<<"\nRekening Berhasil dibuat"<<endl;
